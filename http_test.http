@@ -1,0 +1,25 @@
+GET http://localhost:8080/products HTTP/1.1
+Accept: application/json
+
+GET http://localhost:8080/product/1 HTTP/1.1
+Accept: application/json
+
+DELETE  http://localhost:8080/product/3 HTTP/1.1
+Accept: application/json
+
+POST http://localhost:8080/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Celular",
+    "price": 21
+}
+
+PUT  http://localhost:8080/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"2",
+    "name": "Jabon",
+    "price": 32
+}
